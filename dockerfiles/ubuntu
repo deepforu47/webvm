@@ -1,2 +1,2 @@
-FROM --platform: linux/amd64 ubuntu
+FROM --platform=linux/amd64 ubuntu
 CMD [ "/bin/bash" ]
