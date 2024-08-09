@@ -1,2 +1,2 @@
-FROM ubuntu:24.04
+FROM ubuntu
 CMD [ "/bin/bash" ]
