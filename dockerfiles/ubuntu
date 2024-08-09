@@ -1,8 +1,8 @@
-FROM --platform=linux/amd64 ubuntu
+FROM --platform=linux/amd64 alpine
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get -y upgrade && \
-	apt-get install -y  procps apt-utils curl ifupdown init logrotate lsb-base \
+RUN apk update && apk -y upgrade && \
+	apk install -y  procps apt-utils curl ifupdown init logrotate lsb-base \
 	nano openssl ssh systemd vim wget iptables less netcat-openbsd
 
 # Make a user, then copy over the /example directory
